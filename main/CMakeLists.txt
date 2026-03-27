@@ -1,2 +1,2 @@
-idf_component_register(SRCS "gc9a01_bsp_generic.c"
+idf_component_register(SRCS "main.c"
                     INCLUDE_DIRS ".")

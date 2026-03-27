@@ -74,6 +74,14 @@ idf.py menuconfig
       - [x] Invert colors
       - (40) Display pixel clock (MHz)
       - (240) Display width
+
+Прочие настройки.
+Высота буфера (LCD framebuf height)
+- (100) LCD framebuf height
+Двойная буферизация (Double framebuf)
+- [ ] LCD double framebuf
+
+
 Подключение пинов.
 
 |**GC9A01**      |**ESP32**|**ОПИСАНИЕ**       |
