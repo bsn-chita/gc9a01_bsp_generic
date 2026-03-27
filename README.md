@@ -1,6 +1,6 @@
 ## Окружение
 * **ESP-IDF:** v5.5.2
-* **Target:** ESP32-S3
+* **Target:** ESP32
 * **Основные компоненты:**
   - bsp_generic 3.0.2
   - lvgl v9.5.0
