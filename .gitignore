@@ -11,4 +11,5 @@ sdkconfig.old
 
 # Скачанные зависимости (они подтянутся сами по idf_component.yml)
 managed_components/
-dependencies.lock
+# Будут скачиватся именно те версии компонентов которые были использованы при разработке проекта
+#dependencies.lock
