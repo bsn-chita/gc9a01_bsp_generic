@@ -50,3 +50,6 @@ ESP_LCD_ILI9341: 2.0.2
 ```bash
 idf.py menuconfig
 ```
+- Component config
+  - Board Support Package (generic)
+    - Display
