@@ -79,8 +79,8 @@ idf.py menuconfig
 |DC(DATA/COMMAND)|2        |Любой свободный    |
 |SDA(MOSI)       |23       |Аппаратный SPI MOSI|
 |SCL(SCLK/CLOCK) |18       |Аппаратный SPI SCK |
-|GND             |GND      |                   |
-|VCC             |3V3      |                   |
+|GND             |GND      |Питание GND        |
+|VCC             |3V3      |Питание 3.3v       |
 |~~BLK(LED)~~    |         |                   |
 
 Кроме GC9A01 и ILI9341 в списке выбора экрана присутствует ST7789 (есть поддержка в ESP-IDF).
