@@ -53,3 +53,5 @@ idf.py menuconfig
 - Component config
   - Board Support Package (generic)
     - Display
+      - [x] Enable display
+
