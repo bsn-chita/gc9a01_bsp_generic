@@ -54,4 +54,10 @@ idf.py menuconfig
   - Board Support Package (generic)
     - Display
       - [x] Enable display
-
+        - Connection
+          - (18) Display SPI SCLK GPIO
+          - (23) Display SPI MOSI GPIO
+          - (-1) Display SPI MISO GPIO
+          - (5) Display SPI CS GPIO
+          - (2) Display SPI DC GPIO
+          - (4) Display reset GPIO
