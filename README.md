@@ -72,14 +72,14 @@ idf.py menuconfig
       - (240) Display width
 
 ### Подключение пинов.
-|**GC9A01**|
-|----------|
-|RST       |
-|CS        |
-|DC        |
-|SDA       |
-|SCL       |
-|GND       |
-|VCC       |
+|**GC9A01**|**ESP32**|
+|----------|---------|
+|RST       |4        |
+|CS        |5        |
+|DC        |2        |
+|SDA(MOSI) |23       |
+|SCL(SCLK) |18       |
+|GND       |GND      |
+|VCC       |3V3      |
 
 
