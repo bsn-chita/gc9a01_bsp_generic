@@ -15,7 +15,7 @@ idf.py set-target esp32
 ### Установливаем компонент esp_bsp_generic через менеджер компонентов (IDF Component Manager).
 Смотри [Реестр компонентов (ESP Component Registry)](https://components.espressif.com).
 
-Позволяет обновляться на минорные версии, но блокирует мажорные обновления.
+Ставим версию 3 позволяя обновляться на минорные версии (например, с 3.0.2 до 3.1.0), но блокирует мажорные обновления (переход на 4.0.0 не произойдет).
 ```bash
 idf.py add-dependency "espressif/esp_bsp_generic^3.0.0"
 ```
@@ -46,4 +46,7 @@ NOTICE: [16/16] idf (5.5.2)
 ESP_LCD_GC9A01: 2.0.4
 ESP_LCD_ILI9341: 2.0.2
 ```
-
+### Заходим в menuconfig и настрайваем дисплей
+```bash
+idf.py menuconfig
+```
