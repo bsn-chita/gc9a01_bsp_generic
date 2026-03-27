@@ -78,13 +78,6 @@ idf.py menuconfig
       - (40) Display pixel clock (MHz)
       - (240) Display width
 
-Прочие настройки.
-Высота буфера (LCD framebuf height)
-- (100) LCD framebuf height
-Двойная буферизация (Double framebuf)
-- [ ] LCD double framebuf
-
-
 Подключение пинов.
 
 |**GC9A01**      |**ESP32**|**ОПИСАНИЕ**       |
@@ -119,7 +112,7 @@ bsp_display_start();
 
 void app_main(void)
 {
-    /* 1. Инициализация дисплея и LVGL на основе настроек menuconfig */
+    /* 1. Инициализация дисплея и LVGL на основе настроек menuconfig (настраивает SPI, инициализирует GC9A01, создает задачу для LVGL, запускает таймеры) */
     bsp_display_start();
     /* 2. Включение подсветки (если настроен пин в menuconfig) */
     bsp_display_backlight_on();
@@ -136,3 +129,26 @@ void app_main(void)
     bsp_display_unlock();
 }
 ```
+Менеджер компонентов автоматически добавляет скачанные библиотеки в проект, поэтому вам не нужно править CMakeLists.txt. Достаточно просто написать #include в коде.
+
+
+
+```c
+#include <stdio.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "esp_log.h"
+#include "bsp/esp-bsp.h"
+#include "lvgl.h"
+#include "led_indicator.h"
+#include "led_strip.h"
+#include "iot_button.h"
+
+static const char *TAG = "GC9A01";
+```
+
+Прочие настройки.
+Высота буфера (LCD framebuf height)
+- (100) LCD framebuf height
+Двойная буферизация (Double framebuf)
+- [ ] LCD double framebuf
