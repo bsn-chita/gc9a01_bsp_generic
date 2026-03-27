@@ -61,3 +61,16 @@ idf.py menuconfig
           - (5) Display SPI CS GPIO
           - (2) Display SPI DC GPIO
           - (4) Display reset GPIO
+          - (-1) Display backlight GPIO
+        - Display driver
+          - [x] GC9A01
+        - Rotation
+          - [x] Mirror X
+        - Color space
+          - [x] BGR
+      - [x] Invert colors
+      - (240) Display width
+
+
+
+
