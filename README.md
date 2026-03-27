@@ -72,7 +72,6 @@ idf.py menuconfig
       - (240) Display width
 
 ### Подключение пинов.
-|------|
 |GC9A01|
 |------|
 |RST   |
@@ -82,6 +81,5 @@ idf.py menuconfig
 |SCL   |
 |GND   |
 |VCC   |
-|------|
 
 
