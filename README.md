@@ -15,7 +15,8 @@ idf.py create-project gc9a01_bsp_generic
 idf.py set-target esp32
 ```
 ### Установливаем компонент esp_bsp_generic через менеджер компонентов (IDF Component Manager).
+Смотри [Реестр компонентов (ESP Component Registry)](https://components.espressif.com) .
 ```bash
 idf.py add-dependency "espressif/esp_bsp_generic^3.0.0"
 ```
-[Реестр компонентов (ESP Component Registry)](https://components.espressif.com)
+
