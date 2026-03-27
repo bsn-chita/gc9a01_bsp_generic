@@ -72,6 +72,7 @@ idf.py menuconfig
         - Color space
           - [x] BGR
       - [x] Invert colors
+      - (40) Display pixel clock (MHz)
       - (240) Display width
 Подключение пинов.
 
