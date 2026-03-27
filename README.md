@@ -14,6 +14,7 @@ idf.py set-target esp32
 ```
 ### Установливаем компонент esp_bsp_generic через менеджер компонентов (IDF Component Manager).
 Смотри [Реестр компонентов (ESP Component Registry)](https://components.espressif.com) .
+
 Позволяет обновляться на минорные версии, но блокирует мажорные обновления.
 ```bash
 idf.py add-dependency "espressif/esp_bsp_generic^3.0.0"
