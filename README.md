@@ -78,6 +78,8 @@ idf.py menuconfig
       - (40) Display pixel clock (MHz)
       - (240) Display width
 
+Частота (Display pixel clock) в 40 MHz — это «золотая середина» для ESP32 и этого контроллера (чем выше число, тем быстрее обновляется картинка FPS).
+
 Подключение пинов.
 
 |**GC9A01**      |**ESP32**|**ОПИСАНИЕ**       |
@@ -130,6 +132,32 @@ void app_main(void)
 }
 ```
 Менеджер компонентов автоматически добавляет скачанные библиотеки в проект, поэтому вам не нужно править CMakeLists.txt. Достаточно просто написать #include в коде.
+
+С помощью команды создаем sdkconfig.defaults на основе текущих настроек sdkconfig.
+
+```bash
+idf.py save-defconfig
+```
+Получаем sdkconfig.defaults:
+
+```bash
+# This file was generated using idf.py save-defconfig. It can be edited manually.
+# Espressif IoT Development Framework (ESP-IDF) 5.5.2 Project Minimal Configuration
+#
+CONFIG_BSP_DISPLAY_ENABLED=y
+CONFIG_BSP_DISPLAY_SCLK_GPIO=18
+CONFIG_BSP_DISPLAY_MOSI_GPIO=23
+CONFIG_BSP_DISPLAY_MISO_GPIO=-1
+CONFIG_BSP_DISPLAY_CS_GPIO=5
+CONFIG_BSP_DISPLAY_DC_GPIO=2
+CONFIG_BSP_DISPLAY_RST_GPIO=4
+CONFIG_BSP_DISPLAY_DRIVER_GC9A01=y
+CONFIG_BSP_DISPLAY_ROTATION_MIRROR_X=y
+CONFIG_BSP_DISPLAY_COLOR_SPACE_BGR=y
+CONFIG_BSP_DISPLAY_INVERT_COLOR=y
+CONFIG_BSP_DISPLAY_PIXEL_CLOCK=40
+CONFIG_BSP_DISPLAY_WIDTH=240
+```
 
 
 
