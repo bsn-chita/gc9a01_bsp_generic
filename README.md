@@ -71,6 +71,17 @@ idf.py menuconfig
       - [x] Invert colors
       - (240) Display width
 
-
+### Подключение пинов.
+|------|---
+|GC9A01
+|------|---
+|RST   |
+|CS    |
+|DC    |
+|SDA   |
+|SCL   |
+|GND   |
+|VCC   |
+|------|
 
 
