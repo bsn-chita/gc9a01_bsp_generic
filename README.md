@@ -3,7 +3,6 @@
 * **Target:** ESP32
 * **Основные компоненты:**
   - bsp_generic 3.0.2
-  - lvgl v9.5.0
 ### Создаем новый проект
 ```bash
 idf.py create-project gc9a01_bsp_generic
